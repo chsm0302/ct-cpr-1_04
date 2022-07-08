@@ -10,7 +10,7 @@ char* solution(const char* phone_number)
 	char* answer;
 	
 	len=strlen(phone_number);
-	answer = (char*)malloc(sizeof(len+1));
+	answer = (char*)malloc(len+1);
 	strcpy(answer,phone_number);
 	
 	for(i=0 ; i<len-4 ; i++)
